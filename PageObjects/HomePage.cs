@@ -6,7 +6,6 @@ using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Support.PageObjects;
 using System.Threading;
 using System.Collections.Generic;
-using OpenQA.Selenium.Support.PageObjects;
 
 namespace SoundCloudTestsPageObj.PageObjects
 {

@@ -13,7 +13,7 @@ namespace SoundCloudTestsPageObj
     public class Test
     {
 
-        [Test, Timeout(200000)]
+        [Test, Timeout(400000)]
         public void TestSearch()
         {
             IWebDriver webDr = new ChromeDriver();
@@ -21,7 +21,7 @@ namespace SoundCloudTestsPageObj
             HomePage home = new HomePage(webDr, wait);
             
             home.goToPage();
-
+            Thread.Sleep(3500);
             home.acceptCookies();
 
             IWebElement element = null;
@@ -35,7 +35,7 @@ namespace SoundCloudTestsPageObj
             webDr.Close();
         }
 
-        [Test, Timeout(100000)]
+        [Test, Timeout(400000)]
         public void TestLogoNavigate()
         {
 
@@ -44,7 +44,7 @@ namespace SoundCloudTestsPageObj
             HomePage home = new HomePage(webDr, wait);
 
             home.goToPage();
-
+            Thread.Sleep(3500);
             home.acceptCookies();
 
             IWebElement element = null;
@@ -55,7 +55,7 @@ namespace SoundCloudTestsPageObj
             webDr.Close();
         }
 
-        [Test, Timeout(200000)]
+        [Test, Timeout(400000)]
         public void TestPlay()
         {
 
@@ -65,7 +65,7 @@ namespace SoundCloudTestsPageObj
             TrackPage home = new TrackPage(driver, wait);
 
             home.goToPage("https://soundcloud.com/user7001700/d0filyv88len");
-
+            Thread.Sleep(3500);
             home.acceptCookies();
 
             IWebElement element = null;
@@ -76,7 +76,7 @@ namespace SoundCloudTestsPageObj
             driver.Close();
         }
 
-        [Test, Timeout(150000)]
+        [Test, Timeout(400000)]
         public void TestPause()
         {
             IWebDriver driver = new ChromeDriver();
@@ -84,7 +84,7 @@ namespace SoundCloudTestsPageObj
             TrackPage home = new TrackPage(driver, wait);
 
             home.goToPage("https://soundcloud.com/user7001700/d0filyv88len");
-
+            Thread.Sleep(3500);
             home.acceptCookies();
 
             Thread.Sleep(1000);
@@ -104,7 +104,7 @@ namespace SoundCloudTestsPageObj
             driver.Close();
         }
 
-        [Test, Timeout(200000)]
+        [Test, Timeout(400000)]
         public void TestNext()
         {
 
@@ -114,7 +114,7 @@ namespace SoundCloudTestsPageObj
             TrackPage home = new TrackPage(driver, wait);
 
             home.goToPage("https://soundcloud.com/user7001700/d0filyv88len");
-
+            Thread.Sleep(3500);
             home.acceptCookies();
 
             IWebElement element = null;
