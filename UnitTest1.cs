@@ -13,9 +13,10 @@ namespace SoundCloudTestsPageObj
     public class Test
     {
 
-        [Test, Timeout(400000)]
+        [Test, Timeout(500000)]
         public void TestSearch()
         {
+            Thread.Sleep(3500);
             IWebDriver webDr = new ChromeDriver();
             WebDriverWait wait = new WebDriverWait(webDr, System.TimeSpan.FromSeconds(300));
             HomePage home = new HomePage(webDr, wait);
@@ -35,10 +36,10 @@ namespace SoundCloudTestsPageObj
             webDr.Close();
         }
 
-        [Test, Timeout(400000)]
+        [Test, Timeout(500000)]
         public void TestLogoNavigate()
         {
-
+            Thread.Sleep(3500);
             IWebDriver webDr = new ChromeDriver();
             WebDriverWait wait = new WebDriverWait(webDr, System.TimeSpan.FromSeconds(300));
             HomePage home = new HomePage(webDr, wait);
@@ -55,11 +56,11 @@ namespace SoundCloudTestsPageObj
             webDr.Close();
         }
 
-        [Test, Timeout(400000)]
+        [Test, Timeout(500000)]
         public void TestPlay()
         {
 
-
+            Thread.Sleep(3500);
             IWebDriver driver = new ChromeDriver();
             WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(300));
             TrackPage home = new TrackPage(driver, wait);
@@ -76,9 +77,10 @@ namespace SoundCloudTestsPageObj
             driver.Close();
         }
 
-        [Test, Timeout(400000)]
+        [Test, Timeout(500000)]
         public void TestPause()
         {
+            Thread.Sleep(3500);
             IWebDriver driver = new ChromeDriver();
             WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(3000));
             TrackPage home = new TrackPage(driver, wait);
@@ -104,10 +106,10 @@ namespace SoundCloudTestsPageObj
             driver.Close();
         }
 
-        [Test, Timeout(400000)]
+        [Test, Timeout(500000)]
         public void TestNext()
         {
-
+            Thread.Sleep(3500);
 
             IWebDriver driver = new ChromeDriver();
             WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(300));
