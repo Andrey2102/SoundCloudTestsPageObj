@@ -1,5 +1,7 @@
+using Allure.Commons;
+using NUnit.Allure.Attributes;
+using NUnit.Allure.Core;
 using NUnit.Framework;
-using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
@@ -9,10 +11,11 @@ using SoundCloudTestsPageObj.PageObjects;
 
 namespace SoundCloudTestsPageObj
 {
+    [AllureNUnit]
     [TestFixture()]
     public class Test
     {
-
+        
         [Test, Timeout(500000)]
         public void TestSearch()
         {
